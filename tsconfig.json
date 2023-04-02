@@ -8,5 +8,6 @@
     "skipLibCheck": true,
     "strict": true,
     "outDir": "dist"
-  }
+  },
+  "include": ["src"]
 }
