@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "fastify-koa",
   "description": "Convert Koa middlewares into Fastify plugins",
   "main": "./dist/index.js",
@@ -9,7 +9,7 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
-    "version" : "npm run format && git add -A src",
+    "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
