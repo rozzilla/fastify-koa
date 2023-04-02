@@ -24,5 +24,21 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rozzilla/fastify-koa.git"
+  },
+  "keywords": [
+    "fastify",
+    "koa",
+    "fastify-plugin",
+    "koa-connector"
+  ],
+  "author": "rozzilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rozzilla/fastify-koa/issues"
+  },
+  "homepage": "https://github.com/rozzilla/fastify-koa#readme"
 }
