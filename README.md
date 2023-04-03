@@ -1,6 +1,11 @@
-# fastify-koa
+# `fastify-koa`
 
-Convert Koa middlewares into Fastify plugins
+Convert Koa middlewares into [Fastify plugins](https://www.fastify.io/docs/latest/Reference/Plugins/).
+
+## 👉🏼 IMPORTANT! 👀
+
+Is **highly** recommended to write "native" Fastify code.
+The `fastify-koa` module should only be use as a **temporary** "connector" between your Koa code and Fastify.
 
 ## Installation
 
