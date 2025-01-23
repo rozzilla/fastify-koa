@@ -15,7 +15,7 @@ The `fastify-koa` module should only be used as a **temporary** "connector" betw
 
 If you have a Koa middleware like this one:
 
-```
+```js
 (_, next) => {
   console.log("middleware run");
   return next();
@@ -24,7 +24,7 @@ If you have a Koa middleware like this one:
 
 or a route like:
 
-```
+```js
 const koaRouter = new Router();
 koaRouter.get("/koa", async (ctx) => {
   ctx.body = "Hello from Koa\n";
@@ -33,7 +33,7 @@ koaRouter.get("/koa", async (ctx) => {
 
 you can use the `fastify-koa` plugin to use them in your Fastify code:
 
-```
+```js
 server.register(koaToFastify, [
   // your Koa middlewares/routes
 ])
@@ -43,7 +43,7 @@ server.register(koaToFastify, [
 
 Full working example code:
 
-```
+```js
 import fastify, { FastifyInstance } from "fastify";
 import koaToFastify from "fastify-koa";
 import Router from "koa-router";
@@ -77,7 +77,7 @@ koaRouter.get("/koa", async (ctx) => {
 
 When you build and run this code, calling `curl http://localhost:3000/fastify && curl http://localhost:3000/koa` you'll get:
 
-```
+```shell
 # From your node.js process
 middleware run
 
