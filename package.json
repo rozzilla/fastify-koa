@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "name": "fastify-koa",
   "description": "Convert Koa middlewares into Fastify plugins",
   "main": "./dist/index.js",
